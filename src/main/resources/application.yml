@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: ecommerce_app
+  main:
+    banner-mode: off
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerce?currentSchema=full-stack-ecommerce
+    username: postgres
+    password: ecommerce
+  data:
+    rest:
+      base-path: /api
+      detection-strategy: ANNOTATED
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    root: error
+
+server:
+  port: 8081
+
+security:
+  jwt:
+    secret-key: 5fc506a43e81c164fd405f92df298c6867160aeb9b72fc0d58a65cc8e7e7e530
+    expiration-time: 3600000
+
+allowed:
+  origins: http://localhost:4200
