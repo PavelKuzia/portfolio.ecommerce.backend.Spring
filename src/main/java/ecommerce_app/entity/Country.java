@@ -27,4 +27,9 @@ public class Country {
 
     @OneToMany(mappedBy = "country", fetch = FetchType.EAGER)
     private List<State> states;
+
+    public Country(String code, String name) {
+        this.code = code;
+        this.name = name;
+    }
 }

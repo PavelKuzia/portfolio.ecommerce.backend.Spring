@@ -11,8 +11,11 @@ public class Initialization implements CommandLineRunner {
     @Value("${server.port}")
     private int serverPort;
 
+    @Value("${ENV_STAGE}")
+    private String stage;
+
     @Override
     public void run(String[] args) throws Exception {
-        System.out.printf("Server is running on port %d. Waiting for requests...\n", serverPort);
+        System.out.printf("Server is running on port %d in %s mode. Waiting for requests...\n", serverPort, stage);
     }
 }

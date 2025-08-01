@@ -12,7 +12,6 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
 public class ProductController {
     private final ProductRepository repo;
     public ProductController(ProductRepository repo) {

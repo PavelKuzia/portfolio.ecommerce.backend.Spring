@@ -29,4 +29,9 @@ public class State {
         this.name = name;
         this.country = country;
     }
+
+    public State(String name, Country c) {
+        this.name = name;
+        this.country = c;
+    }
 }
