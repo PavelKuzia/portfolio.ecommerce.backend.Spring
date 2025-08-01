@@ -103,7 +103,7 @@
 
 	<build>
 		<!--suppress UnresolvedMavenProperty -->
-		<finalName>portfolio_backend_${VERSION}</finalName>
+		<finalName>portfolio_backend_${env.VERSION}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
